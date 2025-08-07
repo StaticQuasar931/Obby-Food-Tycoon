@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Obby Food Tycoon – Unblocked Tycoon Adventure G@me | StaticQuasar931</title>
-  
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="Play Obby Food Tycoon unblocked – a Roblox-style tycoon obby game. Build your food empire, complete obstacle courses, and rise to the top—all in-browser!" />
-  <meta name="keywords" content="obby food tycoon, food tycoon game, roblox style tycoon, obby food tycoon unblocked, tycoon obby game, staticquasar931, food empire builder, obby tycoon school game, obby food builder" />
+  <meta name="keywords" content="obby food tycoon, food tycoon game, roblox style tycoon, obby food tycoon unblocked, tycoon obby game, staticquasar931, food empire builder, obby tycoon school game, obby food builder, static, static931, staticquasar, staticq, staticq931, g@me, game" />
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://sites.google.com/view/staticquasar931/gm3z/obby-food-tycoon"/>
 
@@ -34,6 +34,7 @@
     #staticMenu a { color: #0ff; text-decoration: none; font-weight: bold; }
     #closeStaticMenu { margin-left: 12px; color: #f55; cursor: pointer; }
     @keyframes glow { 0% { opacity: 0.7; } 100% { opacity: 1; box-shadow: 0 0 10px #0ff; } }
+
     #popupIcon {
       position: fixed; bottom: 30px; right: -120px;
       width: 90px; height: 90px; z-index: 9999;
@@ -45,6 +46,32 @@
       animation: flickerPop 2.8s ease-in-out infinite; border-radius: 12px;
     }
     @keyframes flickerPop { 0%,100% { transform: scale(1); opacity: 0.95; } 50% { transform: scale(1.08); opacity: 1; } }
+
+    #playOnSitesBtn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #c00;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      z-index: 9999;
+      box-shadow: 0 0 10px #c00;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #closePlayBtn {
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
     .seo-hidden {
       position: absolute; width: 1px; height: 1px;
       overflow: hidden; clip: rect(1px,1px,1px,1px);
@@ -54,11 +81,13 @@
 
   <script>
     window.onbeforeunload = () => "Leaving will reset your Obby Food Tycoon progress.";
+
     function hideStaticMenu() {
       const m = document.getElementById("staticMenu");
       m.style.display = "none";
       setTimeout(() => m.style.display = "block", 180000);
     }
+
     const popupImages = [
       { src: "https://res.cloudinary.com/dcsrqennd/image/upload/v1747533056/raw_um4pvq.png", link: "https://sites.google.com/view/staticquasar931/google-form", alt: "Google Form" },
       { src: "https://res.cloudinary.com/dcsrqennd/image/upload/v1747533158/raw_cw34yi.png", link: "https://www.instagram.com/freeschoolgamepage/", alt: "Instagram" }
@@ -75,6 +104,13 @@
       idx = (idx + 1) % popupImages.length;
       setTimeout(() => popup.classList.remove("show"), 10000);
     }
+
+    function hidePlayButton() {
+      const btn = document.getElementById("playOnSitesBtn");
+      btn.style.display = "none";
+      setTimeout(() => btn.style.display = "flex", 600000); // 10 minutes
+    }
+
     window.onload = () => {
       togglePopup();
       setInterval(togglePopup, 25000);
@@ -87,12 +123,17 @@
     <a href="https://sites.google.com/view/staticquasar931/gm3z" target="_blank">More Unblocked Games by Static</a>
     <span id="closeStaticMenu" onclick="hideStaticMenu()">✕</span>
   </div>
-  
-  <iframe src="https://script.google.com/macros/s/AKfycbxS6WT28mw1EO9wkpTRvlCAit9yuJCK7rm8USP3HEUviAjeDB-M6dvtc7zBosLBa92QFA/exec" allowfullscreen></iframe>
-  
+
   <a id="popupIcon" href="https://sites.google.com/view/staticquasar931/google-form" target="_blank">
     <img src="https://res.cloudinary.com/dcsrqennd/image/upload/v1747533056/raw_um4pvq.png" alt="Popup Icon">
   </a>
+
+  <a id="playOnSitesBtn" href="https://sites.google.com/view/staticquasar931/gm3z/gm3z/Obby-Food-Tycoon" target="_blank">
+    Play on Google Sites
+    <span id="closePlayBtn" onclick="hidePlayButton()">✕</span>
+  </a>
+
+  <iframe src="https://script.google.com/macros/s/AKfycbxS6WT28mw1EO9wkpTRvlCAit9yuJCK7rm8USP3HEUviAjeDB-M6dvtc7zBosLBa92QFA/exec" allowfullscreen></iframe>
 
   <div class="seo-hidden">
     <h1>Obby Food Tycoon – Roblox‑Style Tycoon Obby Game</h1>
@@ -108,7 +149,7 @@
       <li>Idle Game: Prison Life</li>
       <li>Obby-style tycoon variations or sandbox obbies</li>
     </ul>
-    <p>Keywords: obby food tycoon, food tycoon obby, roblox obby tycoon, obstacle tycoon game, school safe g@mes, staticquasar931</p>
+    <p>Keywords: obby food tycoon, food tycoon obby, roblox obby tycoon, obstacle tycoon game, school safe g@mes, staticquasar931, static931, static, staticq931, g@me, game</p>
   </div>
 </body>
 </html>
